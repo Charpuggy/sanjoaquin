@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-size: 100%;
+}
+header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header h2 {
+    color: #800000;
+    font-size: 130%;
+    padding-left: 30px;
+}
+header h3 {
+    font-style: italic;
+    font-size: 120%;
+    padding-left: 30px;
+}
+main h1{
+    font-size: 150%;
+}
+main h2 {
+    font-size: 130%;
+    color: #800000;
+}
+main h3 {
+    font-size: 105%;
+}
+:focus {
+ font-style: italic;
+}
+footer p {
+    display: flex;
+    justify-content: center;
+}
+header h3 span{
+    text-shadow: #800000 2px 2px 2px;
+}
