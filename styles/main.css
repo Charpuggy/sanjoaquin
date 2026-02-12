@@ -9,7 +9,7 @@ html {
 body{
     font-family: sans-serif;
     font-size: 100%;
-    width:600px;
+    width:55%;
     margin: 0 auto;
     border: 3px solid #931420;
     background-color: #fffded;
@@ -37,6 +37,13 @@ header h3 {
 }
 main {
     padding: 0 1em;
+    display: flex; 
+}
+main section{
+    width: 75%;
+}
+main aside{
+    width: 25%;
 }
 main h1{
     font-size: 150%;
