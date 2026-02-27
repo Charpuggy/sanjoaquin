@@ -5,6 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/slicknav.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<script src="jquery-3.7.1.min.js"></script>
+	<script src="jquery.slicknav.min.js"></script>
+
+	<script type="text/javascript">
+    $(document).ready(function()
+    {
+        $('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+    });
+</script>
 </head>
 <body>
 	<header>
@@ -15,6 +28,7 @@
 		</div>
 		
 	</header>
+	<nav id="mobilemenu">
 	<nav id="nav_menu">
 		<ul>
 			<li><a href="index.html">Home</a></li>
@@ -24,7 +38,7 @@
 			<li><a href="tickets.html">Tickets</a></li>
 		</ul>
 	</nav>
-
+	</nav>
 
 	<main>
 		<aside>
@@ -79,5 +93,6 @@ San Joaquin Valley Town Hall is a non-profit organization that is run by an all-
 	<footer>
 		(c) 2026, San Joaquin Valley Town Hall, Fresno, CA 93755		
 	</footer>
+	
 </body>
 </html>

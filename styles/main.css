@@ -1,7 +1,8 @@
 *{
-    margin: 0;
+    margin: auto ;
     padding: 0;
     box-sizing: border-box;
+    max-width: 1200px;
 }
 html {
     background-color: white;
@@ -14,10 +15,17 @@ body{
     border: 3px solid #931420;
     background-color: #fffded;
 }
+img {
+    width: 100%;
+    min-width: 70px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 header {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 0.25em;
     border-bottom: 3px solid #931420;
     padding: 1.5em 0 2em 0;
     background-image: linear-gradient(#f6bb73, white);;
@@ -28,16 +36,17 @@ header img {
 header h2 {
     color: #800000;
     font-size: 200%;
-    padding-left: 10px;
+    padding-left: 0.1em;
 }
 header h3 {
     font-style: italic;
     font-size: 120%;
-    padding-left: 10px;
+    padding-left: 0.1em;
 }
 main {
     padding: 0 1em;
-    display: flex; 
+    display: column; 
+    align-items: center;
 }
 main section{
     width: 75%;
@@ -76,6 +85,9 @@ main ul {
 main li {
     padding-bottom: 0.35em;
 }
+section, aside {
+    width: 95%;
+}
 :focus {
  font-style: italic;
 }
@@ -95,6 +107,12 @@ footer p {
 }
 header h3 span{
     text-shadow: #800000 2px 2px 2px;
+}
+#mobile_menu {
+    display: none;
+}
+#slicknav_menu {
+    background-color: #800000;
 }
 /******************************************************************
 Nav Menu Rule Blocks
@@ -121,4 +139,29 @@ Nav Menu Rule Blocks
 }
 #nav_menu a:hover {
     color: yellow;
+}
+@media only screen and (max-width: 900px) {
+    body {
+      box-shadow: none;  
+      font-size: 90%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    main{
+        flex-direction: column;  
+    }
+    section, aside {
+        width: 95%;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    #nav_menu {
+        display: none;
+    }
+@media only screen and (max-width: 479px) {
+    header h1 h2 h3 h4, section p{
+        font-size: 70%;
+    }
+}
 }
